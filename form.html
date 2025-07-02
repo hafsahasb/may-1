@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100" required>
+    
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        
+        <div>
+            <label for="gender">Gender:</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                Male
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                Female
+            </label>
+        </div>
+        
+        <div>
+            <label for="interest">Interests:</label>
+            <label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                Music
+            </label>
+            <label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                Sport
+            </label>
+            <label>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                Tech
+            </label>
+        </div>
+
+ <label for="country">Country:       
+        <select id="country" name="country" required>
+            <option value="">Select</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="oman">Oman</option>
+            <option value="singapore">Singapore</option>
+    </select>
+    
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
